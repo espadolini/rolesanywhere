@@ -1,0 +1,17 @@
+linters:
+  enable:
+    - gci
+    - gofumpt
+    - gosec
+
+linters-settings:
+  gci:
+    custom-order: true
+    sections:
+      - standard
+      - default
+      - localmodule
+
+  gofumpt:
+    extra-rules: true
+    module-path: github.com/espadolini/rolesanywhere
